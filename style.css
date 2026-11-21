@@ -1,0 +1,25 @@
+:root{--bg:#0b120c;--panel:#101a12;--line:#1f3325;--txt:#e4f2e6;--dim:#7fa383;--acc:#8be28b;--acc2:#ffd479}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--txt);font:14px/1.5 "Segoe UI",system-ui,sans-serif;height:100vh;display:flex;flex-direction:column;overflow:hidden}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 22px;border-bottom:1px solid var(--line)}
+h1{font-size:18px;letter-spacing:1px}
+.lang button{background:none;border:1px solid var(--line);color:var(--dim);padding:5px 14px;cursor:pointer}
+.lang button.on{background:var(--acc);color:#0d2410;border-color:var(--acc);font-weight:600}
+.lang button:first-child{border-radius:7px 0 0 7px}.lang button:last-child{border-radius:0 7px 7px 0}
+main{flex:1;display:flex;min-height:0}
+.panel{width:240px;padding:16px;overflow-y:auto;border-right:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;gap:16px}
+.panel h2{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--dim);margin-bottom:6px}
+.btncol{display:flex;flex-direction:column;gap:6px}
+.btncol button{background:#16241a;border:1px solid var(--line);color:var(--txt);padding:8px 10px;border-radius:8px;cursor:pointer;text-align:left;font-size:13px}
+.btncol button:hover{border-color:var(--acc)}
+.btncol button.primary{background:var(--acc);color:#0d2410;border-color:var(--acc);font-weight:700;text-align:center}
+label{display:block;font-size:12px;color:var(--dim);margin-bottom:9px}
+label span{float:right;color:var(--txt)}
+input[type=range]{width:100%;accent-color:var(--acc);margin-top:4px}
+.check{display:flex;align-items:center;gap:8px}
+.check input{accent-color:var(--acc)}
+.seedrow{display:flex;gap:6px}
+.seedrow input{flex:1;background:#0a120c;border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:8px;font-family:ui-monospace,monospace}
+.seedrow button{padding:8px 12px}
+#cv{flex:1;display:block;background:radial-gradient(ellipse at 50% 110%,#122018 0%,#070d09 70%)}
+@media(max-width:800px){.panel{width:190px}}
